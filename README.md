@@ -9,8 +9,6 @@ Quick Explanation what the .java files do:
 | .java Files  | Usage  |
 |---|---|
 | Colorbutton  | manage Colors of Points  |
-| Colorcombrect  | non optimal Test Rectangle Algorithm  |
-| Colorcombrectbutton  | Button for non optimal Test Rectangle Algorithm  |
 | Comparator X/Y  | to sort a pointlist with their x- or respectively y- Coordinate  |
 | CoordPanel  | Panel where points are inserted with Mouseclicks and Containers are drawn  |
 | CSETA  | "Color Spanning Equilateral Triangle Annulus" Algorithm [2] |
