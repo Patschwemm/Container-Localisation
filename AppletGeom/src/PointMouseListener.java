@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PointMouseListener extends MouseAdapter {
 
-    //Variables necessary to manage the points and set colors of points
+    //Variables necessary to manage the points and set colors of points and drag points
     private CoordPanel panel;
     private static Color color = new Color(255, 0, 0);
     private static List<Point> points = CoordPanel.getPoints();
@@ -39,9 +39,6 @@ public class PointMouseListener extends MouseAdapter {
 
         }
         //if button is active and another Point is added, update algorithm
-        if (ColorcombrectButton.getColorrect() == true & Pointevent == true) {
-            Colorcombrect.execute(panel);
-        }
         if (CSETButton.getCSETtri() == true & Pointevent == true) {
             CSET.execute(panel);
         }
@@ -63,10 +60,6 @@ public class PointMouseListener extends MouseAdapter {
             panel.repaint();
 
             //if Points have been moved, update algorithm
-            if (ColorcombrectButton.getColorrect() == true) {
-                Colorcombrect.execute(panel);
-                panel.repaint();
-            }
             if (OptRectangleButton.getOptRect() == true) {
                 OptRectangle.execute(panel);
                 panel.repaint();
@@ -81,6 +74,7 @@ public class PointMouseListener extends MouseAdapter {
             }
         }
     }
+
 
     public void mouseReleased(MouseEvent e) {
         movingpoint = null;
