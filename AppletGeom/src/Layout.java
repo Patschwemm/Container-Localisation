@@ -25,7 +25,7 @@ public class Layout extends JFrame {
     public static JTextField area3 = new JTextField("Fläche");
     public static JTextField time3 = new JTextField("Zeit in ns");
 
-    //for number Generation:
+    //for point Generation:
     public static JTextField point_num = new JTextField("Anzahl an Punkten");
     public static JTextField color_num = new JTextField("#verschiedene Farben");
 
@@ -150,7 +150,7 @@ public class Layout extends JFrame {
         //Button for Step By Step and normal CS-Rectangle
         JPanel OptRectButtons = new JPanel();
         OptRectButtons.setLayout(new GridLayout(0, 2, 2, 2));
-        JButton OptRectButton = new JButton("Optimum Rectangle");
+        JButton OptRectButton = new JButton("CS-Rectangle");
         OptRectButton.addActionListener(new OptRectangleButton(coordPanel));
         OptRectButton.setFocusPainted(false);
         JButton OptRectStepButton = new JButton("Step");
